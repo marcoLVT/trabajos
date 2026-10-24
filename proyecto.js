@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primer JavaScript</title>
+</head>
 <body>
-<h1>My First JavaScript</h1>
 
-<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
+    <h1>My First JavaScript</h1>
 
-<p id="demo"></p>
+    <!-- Llamamos a una función separada -->
+    <button type="button" onclick="mostrarFecha()">Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function mostrarFecha() {
+            document.getElementById('demo').innerHTML = Date();
+        }
+    </script>
 
 </body>
-</html> 
-
+</html>
